@@ -57,3 +57,5 @@ console.log("2 es mayor a 4?", 2 > 4);
 console.log("4 es menor a 2?", 4 < 2);
 console.log("2 es menor a 4?", 2 < 4);
 
+// Mas info en
+// https://codepen.io/acamica_dwfs/pen/wvabPbg
