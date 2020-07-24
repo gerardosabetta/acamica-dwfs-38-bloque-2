@@ -45,3 +45,6 @@ console.log(esPar(2));
 console.log(esPar(7));
 console.log(esPar(13));
 console.log(esPar(6));
+
+// Mas info en 👇🏻
+// https://codepen.io/acamica_dwfs/pen/ZEGNvQM
