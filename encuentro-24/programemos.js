@@ -23,3 +23,6 @@ const validarUsuario = (usuario) => {
 };
 
 validarUsuario(newUser);
+
+// mas info 👇🏻
+// https://codepen.io/acamica_dwfs/pen/WNQwqYR

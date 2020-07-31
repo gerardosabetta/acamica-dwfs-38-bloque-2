@@ -117,3 +117,7 @@ function verPropiedadDeMartin() {
 // } catch (err) {
 //   alert("Lo siento, algo salio mal, intente mas tarde");
 // }
+
+
+// 👇🏻 Mas info
+// https://codepen.io/acamica_dwfs/pen/oNjxKrz
