@@ -34,4 +34,4 @@ let inputAdoption = dog1.adoptionMod(parseInt(prompt("Ingrese si el canino ha si
 console.log(dog1);
 console.log(dog1.adoptionInfo());
 
-alert(`Informacion de su sabueso: \n Raza: ${inputBreed} \n Color: ${inputColor} \n Edad: ${inputAge} \n Estado de adopcion: ${inputAdoption}`);
+alert(`Informacion de su sabueso: \n Raza: ${dog1.breed} \n Color: ${dog1.color} \n Edad: ${dog1.age} \n Estado de adopcion: ${dog1.adoption}`);
