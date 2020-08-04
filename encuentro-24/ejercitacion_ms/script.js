@@ -24,6 +24,8 @@ const users = [
 
 console.log(users);
 
+let sessionStatus = 0;
+
 const userValidation = (username, password) => {
         if (username === "" || password === "") {
             alert("No ingresaste alguno de los campos");
@@ -31,11 +33,14 @@ const userValidation = (username, password) => {
         for (let i = 0; i < users.length; i++) {
                 if (username === users[i].username && password === users[i].password && users[i].active === 1) {
                     alert(`Bienvenido ${inputUsername}`);
-                    exit;
+                    sessionStatus = 1;
                 }else{
-                    alert("Usuario o contraseña incorrectos");
+                    
                 }
             }
+        }
+        if(sessionStatus === 0){
+            alert("Usuario o contraseña incorrectos");
         }
   };
 
