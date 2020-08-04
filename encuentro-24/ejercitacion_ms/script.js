@@ -24,7 +24,7 @@ const users = [
 
 console.log(users);
 
-let sessionStatus = 0;
+let sessionStatus = false;
 
 const userValidation = (username, password) => {
         if (username === "" || password === "") {
@@ -33,13 +33,11 @@ const userValidation = (username, password) => {
         for (let i = 0; i < users.length; i++) {
                 if (username === users[i].username && password === users[i].password && users[i].active === 1) {
                     alert(`Bienvenido ${inputUsername}`);
-                    sessionStatus = 1;
-                }else{
-                    
+                    sessionStatus = true;
                 }
             }
         }
-        if(sessionStatus === 0){
+        if(!sessionStatus){
             alert("Usuario o contraseña incorrectos");
         }
   };
@@ -67,7 +65,7 @@ do{
 
 }while(exit !== "Salir")
 
-let searchResult = 0;
+let searchResult = false;
 
 function userMod(usermod){
     for(i = 0; i < users.length; i++){
@@ -78,10 +76,10 @@ function userMod(usermod){
             users[i].username = prompt("Modifique el nombre de usuario");
             users[i].password = prompt("Modifique el password");
             users[i].active = parseInt(prompt("Modifique el estado"));
-            searchResult = 1;
+            searchResult = true;
         }
     }
-    if(searchResult === 0){
+    if(!searchResult){
         alert("Usuario no encontrado");
     }
 }
