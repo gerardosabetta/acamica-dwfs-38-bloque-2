@@ -38,7 +38,7 @@ async function search() {
   async function newsSearch(city_name) {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${apiKey}&units=metric&lang=pt_br`;
     const resp = await fetch(url);
-    const info = resp.json();
+    const info = await resp.json();
     return info;
   }
   let info = newsSearch(searchInput.value);
