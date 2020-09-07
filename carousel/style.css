@@ -1,6 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(21, 200px);
+  grid-auto-columns: 200px;
+  grid-auto-flow: column;
   grid-column-gap: 10px;
   overflow: hidden;
   width: 840px;
