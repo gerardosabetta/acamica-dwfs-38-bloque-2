@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(21, 200px);
+  grid-column-gap: 10px;
+  overflow: hidden;
+  width: 840px;
+  margin: 0 auto;
+}
+
+.container .perro-container {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+.container .perro-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.botones {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
