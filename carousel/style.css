@@ -4,6 +4,7 @@
   grid-auto-flow: column;
   grid-column-gap: 10px;
   overflow: hidden;
+  scroll-behavior: smooth;
   width: 840px;
   margin: 0 auto;
 }
@@ -11,7 +12,6 @@
 .container .perro-container {
   height: 200px;
   width: 200px;
-  display: inline-block;
 }
 
 .container .perro-container img {
@@ -25,4 +25,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    overflow-x: scroll;
+    width: 420px;
+  }
+  .botones {
+    display: none;
+  }
 }
